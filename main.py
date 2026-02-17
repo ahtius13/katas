@@ -5,7 +5,8 @@ def string_calculator(s):
     if s == "":
         resultado = 0
     else:
-        partes = s.split(',') # "1,2" => ['1','2']
+        num = s.replace("\n",",")
+        partes = num.split(',') # "1,2" => ['1','2']
         for num in partes:
             resultado= resultado + int(num)
 
